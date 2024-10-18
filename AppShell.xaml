@@ -1,0 +1,19 @@
+<Shell
+    x:Class="FinanzasPersonales.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:FinanzasPersonales"
+    xmlns:transacciones="clr-namespace:FinanzasPersonales.Pages.Transacciones"
+    Shell.FlyoutBehavior="Disabled"
+    Title="FinanzasPersonales">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+    <ShellContent
+        Title="Agregar Transacción"
+        ContentTemplate="{DataTemplate transacciones:AgregarTransaccionPage}"
+        Route="AgregarTransaccionPage" />
+</Shell>

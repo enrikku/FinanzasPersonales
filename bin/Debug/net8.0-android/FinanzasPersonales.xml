@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FinanzasPersonales</name>
+    </assembly>
+    <members>
+        <member name="M:FinanzasPersonales.DB.DatabaseService.InitializeDatabaseAsync">
+            <summary>
+            Metodo para inicializar la base de datos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasPersonales.DB.DatabaseService.GetItemsAsync``1">
+            <summary>
+            Metodo para obtener los registros de una tabla
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasPersonales.DB.DatabaseService.SaveItemAsync``1(``0)">
+            <summary>
+            Metodo para insertar un nuevo registro en la base de datos
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasPersonales.DB.DatabaseService.DeleteAllItemsAsync``1">
+            <summary>
+            Método para eliminar todos los registros de una tabla.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

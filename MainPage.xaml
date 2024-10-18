@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FinanzasPersonales"
+             xmlns:charts="clr-namespace:Microcharts.Maui;assembly=Microcharts.Maui"
+             x:Class="FinanzasPersonales.MainPage"
+             Title="Resumen de Finanzas">
+    <ScrollView>
+        <StackLayout Padding="10" Spacing="20">
+        <!-- Título -->
+        <Label Text="Finanzas Personales" 
+               FontSize="Large" 
+               HorizontalOptions="Center" />
+
+        <!-- Resumen rápido -->
+        <Frame Padding="10" BorderColor="Gray" CornerRadius="10">
+            <StackLayout>
+                <Label Text="Resumen mensual" FontSize="Medium" />
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label Text="Total de ingresos:" Grid.Row="0" Grid.Column="0" />
+                    <Label x:Name="lblIngresos" Text="" Grid.Row="0" Grid.Column="1" HorizontalOptions="End" />
+
+                    <Label Text="Total de gastos:" Grid.Row="1" Grid.Column="0" />
+                    <Label x:Name="lblGastos" Grid.Row="1" Grid.Column="1" HorizontalOptions="End" />
+                </Grid>
+
+                <!-- Balance general -->
+                <Label Text="Balance:" FontAttributes="Bold" HorizontalOptions="Center" />
+                <Label x:Name="lblBalance" FontAttributes="Bold" FontSize="Large" TextColor="Green" HorizontalOptions="Center" />
+            </StackLayout>
+        </Frame>
+
+        <!-- Botón para agregar nueva transacción -->
+        <Button x:Name="btnNuevaTransaccion"
+                Text="Agregar transacción"
+                FontSize="Medium"
+                Clicked="btnNuevaTransaccion_Clicked" />
+
+        <!-- Gráfico de gastos -->
+        <Label Text="Gastos por categoría" FontSize="Medium" />
+        <!--<BoxView HeightRequest="200" Color="LightGray" />-->
+        <charts:ChartView x:Name="myChart" HeightRequest="300" />
+
+        <!-- Lista de últimas transacciones -->
+        <Label Text="Últimas transacciones" FontSize="Medium" />
+            <CollectionView ItemsSource="{Binding UltimasTransacciones}" HeightRequest="300">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <!-- Columna para Descripción -->
+                                <ColumnDefinition Width="Auto" />
+                                <!-- Columna para Fecha, ajustada automáticamente -->
+                                <ColumnDefinition Width="*" />
+                                <!-- Columna para Monto -->
+                            </Grid.ColumnDefinitions>
+
+                            <Label Grid.Column="0" Text="{Binding Descripcion}" FontSize="Small" VerticalOptions="Center" />
+                            <Label Grid.Column="1" FontSize="Small" HorizontalOptions="Center" Text="{Binding Fecha, Converter={StaticResource FechaToStringConverter}}"/>
+                            <Label Grid.Column="2" FontSize="Small" HorizontalOptions="End" Text="{Binding Monto}" TextColor="{Binding Monto, Converter={StaticResource MontoToColorConverter}}" />
+                        </Grid>
+
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+        </ScrollView>
+</ContentPage>
