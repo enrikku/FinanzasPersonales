@@ -7,7 +7,7 @@ namespace FinanzasPersonales
         public App()
         {
             InitializeComponent();
-            // Establece AppShell como la página principal
+            
             MainPage = new AppShell();
             Task.Run(async () => await InitializeMainPageAsync());
         }

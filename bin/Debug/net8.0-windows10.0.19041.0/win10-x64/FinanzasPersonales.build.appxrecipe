@@ -61,6 +61,9 @@
     <AppxPackagedFile Include="C:\Users\HP\source\repos\FinanzasPersonales\FinanzasPersonales\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\HP\source\repos\FinanzasPersonales\FinanzasPersonales\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_icon.scale-100.png">
+      <PackagePath>add_icon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HP\source\repos\FinanzasPersonales\FinanzasPersonales\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
     </AppxPackagedFile>
@@ -199,6 +202,12 @@
     <AppxPackagedFile Include="C:\Users\HP\source\repos\FinanzasPersonales\FinanzasPersonales\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\HP\source\repos\FinanzasPersonales\FinanzasPersonales\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\consult_icon.scale-100.png">
+      <PackagePath>consult_icon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\HP\source\repos\FinanzasPersonales\FinanzasPersonales\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\delete_icon.scale-100.png">
+      <PackagePath>delete_icon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HP\source\repos\FinanzasPersonales\FinanzasPersonales\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
     </AppxPackagedFile>
@@ -214,6 +223,15 @@
     <AppxPackagedFile Include="C:\Users\HP\source\repos\FinanzasPersonales\FinanzasPersonales\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\HP\source\repos\FinanzasPersonales\FinanzasPersonales\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit_icon.scale-100.png">
+      <PackagePath>edit_icon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\HP\source\repos\FinanzasPersonales\FinanzasPersonales\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\home_icon.scale-100.png">
+      <PackagePath>home_icon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\HP\source\repos\FinanzasPersonales\FinanzasPersonales\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\transaction_icon.scale-100.png">
+      <PackagePath>transaction_icon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HP\source\repos\FinanzasPersonales\FinanzasPersonales\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\FinanzasPersonales.deps.json">
       <PackagePath>FinanzasPersonales.deps.json</PackagePath>
     </AppxPackagedFile>
@@ -222,6 +240,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HP\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.44\lib\net8.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\HP\.nuget\packages\communitytoolkit.maui\9.1.0\lib\net8.0-windows10.0.19041\CommunityToolkit.Maui.dll">
+      <PackagePath>CommunityToolkit.Maui.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\HP\.nuget\packages\communitytoolkit.maui.core\9.1.0\lib\net8.0-windows10.0.19041\CommunityToolkit.Maui.Core.dll">
+      <PackagePath>CommunityToolkit.Maui.Core.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HP\.nuget\packages\microcharts.maui\1.0.0\lib\net6.0-windows10.0.19041\Microcharts.Maui.dll">
       <PackagePath>Microcharts.Maui.dll</PackagePath>
@@ -328,13 +352,13 @@
     <AppxPackagedFile Include="C:\Users\HP\.nuget\packages\skiasharp\2.88.8\lib\net6.0\SkiaSharp.dll">
       <PackagePath>SkiaSharp.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\.nuget\packages\skiasharp.views.maui.controls\2.88.3\lib\net6.0-windows10.0.18362.0\SkiaSharp.Views.Maui.Controls.dll">
+    <AppxPackagedFile Include="C:\Users\HP\.nuget\packages\skiasharp.views.maui.controls\2.88.8\lib\net6.0-windows10.0.18362.0\SkiaSharp.Views.Maui.Controls.dll">
       <PackagePath>SkiaSharp.Views.Maui.Controls.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\.nuget\packages\skiasharp.views.maui.core\2.88.3\lib\net6.0-windows10.0.18362.0\SkiaSharp.Views.Maui.Core.dll">
+    <AppxPackagedFile Include="C:\Users\HP\.nuget\packages\skiasharp.views.maui.core\2.88.8\lib\net6.0-windows10.0.18362.0\SkiaSharp.Views.Maui.Core.dll">
       <PackagePath>SkiaSharp.Views.Maui.Core.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\.nuget\packages\skiasharp.views.winui\2.88.3\lib\net6.0-windows10.0.19041.0\SkiaSharp.Views.Windows.dll">
+    <AppxPackagedFile Include="C:\Users\HP\.nuget\packages\skiasharp.views.winui\2.88.8\lib\net6.0-windows10.0.19041.0\SkiaSharp.Views.Windows.dll">
       <PackagePath>SkiaSharp.Views.Windows.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HP\.nuget\packages\sqlite-net-pcl\1.9.172\lib\netstandard2.0\SQLite-net.dll">
@@ -348,6 +372,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HP\.nuget\packages\sqlitepclraw.provider.e_sqlite3\2.1.2\lib\net6.0-windows7.0\SQLitePCLRaw.provider.e_sqlite3.dll">
       <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\HP\.nuget\packages\system.speech\8.0.0\runtimes\win\lib\net8.0\System.Speech.dll">
+      <PackagePath>System.Speech.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HP\.nuget\packages\microsoft.maui.controls.core\8.0.92\lib\net8.0-windows10.0.19041\ar\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ar\Microsoft.Maui.Controls.resources.dll</PackagePath>

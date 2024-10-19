@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="FinanzasPersonales.Pages.Menu.MenuPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    Title="Menú">
+    <StackLayout>
+        <!--  Opciones del menú  -->
+        <ScrollView>
+            <StackLayout Padding="10">
+
+                <!--  Primera categoría en el menú  -->
+                <toolkit:Expander>
+                    <toolkit:Expander.Header>
+                        <Label
+                            FontAttributes="Bold"
+                            FontSize="Medium"
+                            Text="Personalización" />
+                    </toolkit:Expander.Header>
+                    <StackLayout>
+                        <Button Clicked="OnAgregarCategoriaClicked" Text="Agregar Nueva Categoría" />
+                        <Button Clicked="OnEliminarTransaccionClicked" Text="Eliminar Transacción" />
+                    </StackLayout>
+                </toolkit:Expander>
+
+                <!--  Otra categoría del menú  -->
+                <toolkit:Expander>
+                    <toolkit:Expander.Header>
+                        <Label
+                            FontAttributes="Bold"
+                            FontSize="Medium"
+                            Text="Transacciones" />
+                    </toolkit:Expander.Header>
+                    <StackLayout>
+                        <Button Clicked="OnVerTransaccionesClicked" Text="Ver Transacciones" />
+                        <Button Clicked="OnAgregarTransaccionClicked" Text="Agregar Transacción" />
+                    </StackLayout>
+                </toolkit:Expander>
+
+                <!--  Otras categorías del menú  -->
+                <!--  Añade más expanders según sea necesario  -->
+
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

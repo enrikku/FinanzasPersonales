@@ -1,4 +1,5 @@
-﻿using Microcharts.Maui;
+﻿using CommunityToolkit.Maui;
+using Microcharts.Maui;
 using Microsoft.Extensions.Logging;
 
 namespace FinanzasPersonales
@@ -10,6 +11,7 @@ namespace FinanzasPersonales
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+                .UseMauiCommunityToolkit()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

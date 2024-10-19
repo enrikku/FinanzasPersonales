@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="FinanzasPersonales.Pages.Transacciones.ConsultarTransacciones"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Consultar Transacciones">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <VerticalStackLayout Grid.Row="0" Padding="10">
+            <Label
+                FontSize="Large"
+                HorizontalOptions="Center"
+                Text="Lista de Transacciones" />
+
+            <ListView
+                x:Name="lvTransacciones"
+                HasUnevenRows="True"
+                ItemsSource="{Binding Transacciones}"
+                SeparatorColor="LightBlue"
+                SeparatorVisibility="Default">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell Tapped="OnTappedListItem">
+                            <StackLayout Padding="5" Orientation="Horizontal">
+                                <Label
+                                    FontSize="Small"
+                                    Text="{Binding Descripcion}"
+                                    VerticalOptions="Center" />
+                                <Label
+                                    FontSize="Small"
+                                    HorizontalOptions="EndAndExpand"
+                                    Text="{Binding Fecha, Converter={StaticResource FechaToStringConverter}}"
+                                    VerticalOptions="Center" />
+                                <Label
+                                    FontSize="Small"
+                                    HorizontalOptions="EndAndExpand"
+                                    Text="{Binding Monto, StringFormat='{0:C}'}"
+                                    VerticalOptions="Center" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </VerticalStackLayout>
+
+        <!--  Botones  -->
+        <HorizontalStackLayout
+            Grid.Row="1"
+            Padding="10"
+            HorizontalOptions="Center">
+            <ImageButton
+                Margin="50"
+                BackgroundColor="#8ac926"
+                Clicked="EditarTransaccion"
+                CornerRadius="10"
+                HeightRequest="50"
+                Source="edit_icon.png"
+                WidthRequest="50" />
+            <ImageButton
+                Margin="50"
+                BackgroundColor="#d62828"
+                Clicked="EliminarTransaccion"
+                CornerRadius="10"
+                HeightRequest="50"
+                Source="delete_icon.png"
+                WidthRequest="50" />
+        </HorizontalStackLayout>
+    </Grid>
+</ContentPage>

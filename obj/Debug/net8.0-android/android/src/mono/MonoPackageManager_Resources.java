@@ -3,6 +3,8 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "FinanzasPersonales.dll" comes first in this list. */
 		"FinanzasPersonales.dll",
+		"CommunityToolkit.Maui.dll",
+		"CommunityToolkit.Maui.Core.dll",
 		"GoogleGson.dll",
 		"Microcharts.Maui.dll",
 		"Microsoft.Extensions.Configuration.dll",

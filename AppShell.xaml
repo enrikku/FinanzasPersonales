@@ -4,16 +4,33 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:FinanzasPersonales"
     xmlns:transacciones="clr-namespace:FinanzasPersonales.Pages.Transacciones"
-    Shell.FlyoutBehavior="Disabled"
-    Title="FinanzasPersonales">
+    Title="FinanzasPersonales"
+    FlyoutBehavior="Flyout">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <!--  Personalizar el encabezado del menú  -->
+    <Shell.FlyoutHeader>
+        <StackLayout Padding="10" BackgroundColor="LightGray">
+            <Label FontSize="20" Text="Menú de Opciones" />
+        </StackLayout>
+    </Shell.FlyoutHeader>
 
-    <ShellContent
-        Title="Agregar Transacción"
-        ContentTemplate="{DataTemplate transacciones:AgregarTransaccionPage}"
-        Route="AgregarTransaccionPage" />
+    <!--  Primer FlyoutItem para la página principal  -->
+    <FlyoutItem Title="Home" Icon="home_icon.png">
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+    </FlyoutItem>
+
+    <!--  FlyoutItem para Transacciones  -->
+    <FlyoutItem Title="Transacciones" Icon="transaction_icon.png">
+        <ShellContent
+            ContentTemplate="{DataTemplate transacciones:AgregarTransaccionPage}"
+            Icon="add_icon.png"
+            Route="AgregarTransaccionPage" />
+        <ShellContent
+            ContentTemplate="{DataTemplate transacciones:ConsultarTransacciones}"
+            Icon="consult_icon.png"
+            Route="ConsultarTransacciones" />
+    </FlyoutItem>
 </Shell>

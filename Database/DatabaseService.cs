@@ -66,5 +66,15 @@ namespace FinanzasPersonales.DB
             return _database.DeleteAllAsync<T>();
         }
 
+        /// <summary>
+        /// Método para eliminar un registro de la base de datos
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="item"></param>
+        /// <returns></returns>
+        public Task<int> DeleteItemAsync<T>(T item) where T : new()
+        {
+            return _database.DeleteAsync(item);
+        }
     }
 }
